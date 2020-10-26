@@ -50,12 +50,10 @@ const App = () => {
       });
     }
   };
-  startRunning = () => {
-    document.addEventListener("keydown", handleKeyDown);
-  };
+
   const start = () => {
     setRenderBall(true);
-    startRunning();
+    document.addEventListener("keydown", handleKeyDown);
   };
 
   const renderChoice = () => {
