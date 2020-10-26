@@ -25,13 +25,13 @@ const App = () => {
       setX(value);
       setBallPosition({
         left: value + "px",
-        top: y + "px"
+        top: setY + "px"
       });
     } else if (event.keyCode === 38) {
       let value = y + 5;
       setY(value);
       setBallPosition({
-        left: x + "px",
+        left: setX + "px",
         top: value + "px"
       });
     } else if (event.keyCode === 39) {
@@ -39,13 +39,13 @@ const App = () => {
       setX(value);
       setBallPosition({
         left: value + "px",
-        top: y + "px"
+        top: setY + "px"
       });
     } else if (event.keyCode === 40) {
       let value = y - 5;
       setY(value);
       setBallPosition({
-        left: x + "px",
+        left: setX + "px",
         top: value + "px"
       });
     }
