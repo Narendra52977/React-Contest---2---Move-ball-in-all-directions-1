@@ -29,9 +29,10 @@ const App = () => {
       });
     } else if (event.keyCode === 38) {
       let value = y + 5;
+      let left1 = setX(x + 0);
       setY(value);
       setBallPosition({
-        left: x + "px",
+        left: left1 + "px",
         top: value + "px"
       });
     } else if (event.keyCode === 39) {
