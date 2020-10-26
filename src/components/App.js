@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import "../styles/App.css";
 
 const App = () => {
@@ -18,9 +18,7 @@ const App = () => {
       top: "0px"
     });
   };
-  const startRunning = () => {
-    document.addEventListener("keydown", handleKeyDown);
-  };
+
   const handleKeyDown = (event) => {
     if (event.keyCode === 37) {
       let value = x - 5;
@@ -54,7 +52,9 @@ const App = () => {
   };
   const start = () => {
     setRenderBall(true);
-    startRunning();
+  };
+  useEffect = () => {
+    document.addEventListener("keydown", handleKeyDown);
   };
 
   const renderChoice = () => {
