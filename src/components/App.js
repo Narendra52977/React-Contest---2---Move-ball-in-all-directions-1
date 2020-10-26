@@ -18,8 +18,7 @@ const App = () => {
       top: "0px"
     });
   };
-  const start = () => {
-    setRenderBall(true);
+  const startRunning = () => {
     document.addEventListener("keydown", handleKeyDown);
   };
   const handleKeyDown = (event) => {
@@ -53,6 +52,11 @@ const App = () => {
       });
     }
   };
+  const start = () => {
+    setRenderBall(true);
+    startRunning();
+  };
+
   const renderChoice = () => {
     if (renderBall) {
       return <div className="ball" style={ballPosition}></div>;
