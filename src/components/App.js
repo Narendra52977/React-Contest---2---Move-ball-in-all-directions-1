@@ -53,8 +53,10 @@ const App = () => {
 
   const start = () => {
     setRenderBall(true);
-    document.addEventListener("keydown", handleKeyDown);
   };
+  useEffect(() => {
+    document.addEventListener("keydown", handleKeyDown);
+  });
 
   const renderChoice = () => {
     if (renderBall) {
