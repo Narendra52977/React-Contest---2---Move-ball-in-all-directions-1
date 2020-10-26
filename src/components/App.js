@@ -28,7 +28,7 @@ const App = () => {
         top: setY + "px"
       });
     } else if (event.keyCode === 38) {
-      let value = y + 5;
+      let value = y - 5;
 
       setY(value);
       setBallPosition({
@@ -43,7 +43,7 @@ const App = () => {
         top: setY + "px"
       });
     } else if (event.keyCode === 40) {
-      let value = y - 5;
+      let value = y + 5;
       setY(value);
       setBallPosition({
         left: setX + "px",
